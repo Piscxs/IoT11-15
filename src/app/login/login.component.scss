@@ -1,0 +1,140 @@
+/* General Container Style */
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+  
+  /* Main Form Style */
+  .form-signin {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.7s ease-in-out forwards;
+  }
+  
+  /* Header Image */
+  .form-signin .text-center img {
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #007bff; /* Blue border for the image */
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 0.6s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  /* Form Heading */
+  .form-signin h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #333; /* Dark text color */
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  /* Floating Labels */
+  .form-floating {
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    animation-delay: 0.7s;
+  }
+  
+  /* Floating Label Focus Style */
+  .form-floating input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Blue shadow on focus */
+  }
+  
+  .form-floating input:focus + label {
+    top: -0.75rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    color: #007bff; /* Blue label color on focus */
+  }
+  
+  /* Error Messages */
+  .text-danger {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #ffffff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Checkbox */
+  .form-check-input {
+    margin-right: 0.5rem;
+  }
+  
+  .form-check-label {
+    font-size: 0.875rem;
+    color: #495057;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
